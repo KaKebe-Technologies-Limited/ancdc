@@ -62,6 +62,7 @@
     </div>
   </div>
 
+  <!-- gallery-section  -->
   
     <div class="gallery-section">
     <div class="container mt-5">
