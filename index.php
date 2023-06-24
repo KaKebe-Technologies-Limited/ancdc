@@ -27,20 +27,20 @@
     
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html">ANCDC</a>
+      <a class="navbar-brand" href="index.php">ANCDC</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="how-it-works.html" class="nav-link">How It Works</a></li>
-          <li class="nav-item"><a href="team.html" class="nav-link">Our Team</a></li>
-          <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
-          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item active"><a href="index.php" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="how-it-works.php" class="nav-link">How It Works</a></li>
+          <li class="nav-item"><a href="team.php" class="nav-link">Our Team</a></li>
+          <li class="nav-item"><a href="gallery.php" class="nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="blog.php" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -79,7 +79,7 @@
           <h2 class="display-4 mb-3">Who Are We?</h2>
           <p class="lead">All Nations Child Development Center</p>
           <p class="mb-4 text-justify">The primary objective of All Nations Child Development Centre is to provide assistance to underprivileged children and families within the community. Our aim is to enhance their socio-economic standing by implementing effective interventions in various areas, including education, healthcare, psycho-social support, spiritual development, child protection, human rights advocacy, integrated ECD (Early Childhood Development), community engagement, WaSH (Water, Sanitation, and Hygiene), and community economic empowerment.</p>
-          <p class="mb-0"><a href="about.html" class="btn btn-primary px-3 py-2">Learn More</a></p>
+          <p class="mb-0"><a href="about.php" class="btn btn-primary px-3 py-2">Learn More</a></p>
         </div>
       </div>
     </div>
@@ -420,7 +420,7 @@
         <div class="col-md-6 col-lg-4">
           <h3 class="heading-section">About Us</h3>
           <p class="mb-5 text-left"> Christian NGO empowering vulnerable children and households through education, health interventions, child protection, and empowerment programs for a brighter future.</p>
-          <p><a href="about.html" class="link-underline">Read  More</a></p>
+          <p><a href="about.php" class="link-underline">Read  More</a></p>
         </div>
         <div class="col-md-6 col-lg-4">
           <h3 class="heading-section">Recent Blog</h3>
@@ -429,12 +429,36 @@
               <img src="images/img_1.jpg" alt="" class="img-fluid">
             </figure>
             <div class="text">
-              <h3 class="heading"><a href="#">Water Is Life. Clean Water In Urban Area</a></h3>
-              <div class="meta">
-                <div><a href="#"><span class="icon-calendar"></span> July 29, 2018</a></div>
-                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-              </div>
+            <?php
+            // Assuming you have established a database connection
+            require_once 'db.php';
+
+            // Select the most recent post
+            $query = "SELECT title, date, description FROM posts ORDER BY date DESC LIMIT 1";
+            $result = $conn->query($query);
+
+            if ($result->num_rows > 0) {
+                // Fetch the row
+                $row = $result->fetch_assoc();
+
+                // Extract the data
+                $title = $row['title'];
+                $date = $row['date'];
+                $description = $row['description'];
+
+                // Limit the description to 30 characters
+                $limitedDescription = substr($description, 0, 60);
+                if (strlen($description) > 30) {
+                    $limitedDescription .= '...';
+                }
+
+                echo '<h3 class="heading"><a href="blogs.php">' . $title . '</a></h3>
+                    <div class="meta">
+                        <p>' . $limitedDescription . '</p>
+                    </div>';
+            }
+            ?>
+
             </div>
           </div>
 
@@ -443,13 +467,39 @@
               <img src="images/img_2.jpg" alt="" class="img-fluid">
             </figure>
             <div class="text">
-              <h3 class="heading"><a href="#">Life Is Short So Be Kind</a></h3>
-              <div class="meta">
-                <div><a href="#"><span class="icon-calendar"></span> July 29, 2018</a></div>
-                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-              </div>
+            <?php
+            // Assuming you have established a database connection
+            require_once 'db.php';
+
+            // Select the most recent post
+            $query = "SELECT title, date, description FROM posts ORDER BY date DESC LIMIT 1 OFFSET 1";
+            $result = $conn->query($query);
+
+            if ($result->num_rows > 0) {
+                // Fetch the row
+                $row = $result->fetch_assoc();
+
+                // Extract the data
+                $title = $row['title'];
+                $date = $row['date'];
+                $description = $row['description'];
+
+                // Limit the description to 30 characters
+                $limitedDescription = substr($description, 0, 60);
+                if (strlen($description) > 30) {
+                    $limitedDescription .= '...';
+                }
+
+                echo '<h3 class="heading"><a href="blogs.php">' . $title . '</a></h3>
+                    <div class="meta">
+                        <p>' . $limitedDescription . '</p>
+                    </div>';
+            }
+            ?>
+
             </div>
+           
+            
           </div>
 
         </div>

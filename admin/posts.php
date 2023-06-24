@@ -12,6 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $date = $_POST['date'];
     $description = $_POST['description'];
 
+
     // Validate form data (you can add more validation as per your requirements)
     if (empty($title) || empty($date) || empty($description)) {
         // Handle form validation errors

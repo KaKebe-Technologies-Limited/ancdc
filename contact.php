@@ -27,20 +27,20 @@
     
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html">ANCDC</a>
+      <a class="navbar-brand" href="index.php">ANCDC</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="how-it-works.html" class="nav-link">How It Works</a></li>
-          <li class="nav-item"><a href="team.html" class="nav-link">Our Team</a></li>
-          <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
-          <li class="nav-item active"><a href="blog.html" class="nav-link">Blog</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="how-it-works.php" class="nav-link">How It Works</a></li>
+          <li class="nav-item"><a href="team.php" class="nav-link">Our Team</a></li>
+          <li class="nav-item"><a href="gallery.php" class="nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="blog.php" class="nav-link">Blog</a></li>
+          <li class="nav-item active"><a href="contact.php" class="nav-link">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -49,11 +49,11 @@
   
   <div class="block-31" style="position: relative;">
     <div class="owl-carousel loop-block-31 ">
-      <div class="block-30 block-30-sm item" style="background-image: url('images/bg006.JPG');" data-stellar-background-ratio="0.5">
+      <div class="block-30 block-30-sm item" style="background-image: url('images/stake.JPG');" data-stellar-background-ratio="0.5">
         <div class="container">
-          <div class="row align-items-center justify-content-center text-center">
-            <div class="col-md-7">
-              <h2 class="heading mb-5">Our Blog</h2>
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-7 text-center">
+              <h2 class="heading">Get In Touch</h2>
             </div>
           </div>
         </div>
@@ -61,97 +61,45 @@
       
     </div>
   </div>
-  
-  
-  <div class="site-section bg-light">
+
+  <div class="site-section">
     <div class="container">
-      
-
-      <div class="row">
-        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0">
-          <div class="post-entry">
-            <a href="blog-single.html" class="mb-3 img-wrap">
-              <img src="images/blog.JPG" alt="Image placeholder" class="img-fluid">
-            </a>
-            <h3><a href="#">Fun Moments of playing</a></h3>
-            <span class="date mb-4 d-block text-muted">July 26, 2022</span>
-            <p>Amazing Moments together with Donors and the locals play in the community. </p>
-            <p><a href="#" class="link-underline">Read More</a></p>
-          </div>
+      <div class="row block-9">
+        <div class="col-md-6 pr-md-5">
+          <form action="#">
+            <div class="form-group">
+              <input type="text" class="form-control px-3 py-3" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control px-3 py-3" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control px-3 py-3" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <textarea name="" id="" cols="30" rows="7" class="form-control px-3 py-3" placeholder="Message"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+            </div>
+          </form>
+        
         </div>
 
-        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0">
-          <div class="post-entry">
-            <a href="blog-single.html" class="mb-3 img-wrap">
-              <img src="images/blog.JPG" alt="Image placeholder" class="img-fluid">
-            </a>
-            <h3><a href="#">Fun Moments of playing</a></h3>
-            <span class="date mb-4 d-block text-muted">July 26, 2022</span>
-            <p>Amazing Moments together with Donors and the locals play in the community. </p>
-            <p><a href="#" class="link-underline">Read More</a></p>
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0">
-          <div class="post-entry">
-            <a href="blog-single.html" class="mb-3 img-wrap">
-              <img src="images/blog.JPG" alt="Image placeholder" class="img-fluid">
-            </a>
-            <h3><a href="#">Fun Moments of playing</a></h3>
-            <span class="date mb-4 d-block text-muted">July 26, 2022</span>
-            <p>Amazing Moments together with Donors and the locals play in the community. </p>
-            <p><a href="#" class="link-underline">Read More</a></p>
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0">
-          <div class="post-entry">
-            <a href="blog-single.html" class="mb-3 img-wrap">
-              <img src="images/blog.JPG" alt="Image placeholder" class="img-fluid">
-            </a>
-            <h3><a href="#">Fun Moments of playing</a></h3>
-            <span class="date mb-4 d-block text-muted">July 26, 2022</span>
-            <p>Amazing Moments together with Donors and the locals play in the community. </p>
-            <p><a href="#" class="link-underline">Read More</a></p>
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0">
-          <div class="post-entry">
-            <a href="blog-single.html" class="mb-3 img-wrap">
-              <img src="images/blog.JPG" alt="Image placeholder" class="img-fluid">
-            </a>
-            <h3><a href="#">Fun Moments of playing</a></h3>
-            <span class="date mb-4 d-block text-muted">July 26, 2022</span>
-            <p>Amazing Moments together with Donors and the locals play in the community. </p>
-            <p><a href="#" class="link-underline">Read More</a></p>
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0">
-          <div class="post-entry">
-            <a href="blog-single.html" class="mb-3 img-wrap">
-              <img src="images/blog.JPG" alt="Image placeholder" class="img-fluid">
-            </a>
-            <h3><a href="#">Fun Moments of playing</a></h3>
-            <span class="date mb-4 d-block text-muted">July 26, 2022</span>
-            <p>Amazing Moments together with Donors and the locals play in the community. </p>
-            <p><a href="#" class="link-underline">Read More</a></p>
-          </div>
-        </div>
-        </div>
+        <div class="col-md-6" id="map"></div>
       </div>
     </div>
-  </div> <!-- .section -->
+  </div>
 
-
+  
+  
    <footer class="footer">
     <div class="container">
       <div class="row mb-5">
         <div class="col-md-6 col-lg-4">
           <h3 class="heading-section">About Us</h3>
           <p class="mb-5 text-left"> Christian NGO empowering vulnerable children and households through education, health interventions, child protection, and empowerment programs for a brighter future.</p>
-          <p><a href="about.html" class="link-underline">Read  More</a></p>
+          <p><a href="about.php" class="link-underline">Read  More</a></p>
         </div>
         <div class="col-md-6 col-lg-4">
           <h3 class="heading-section">Recent Blog</h3>

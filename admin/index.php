@@ -48,13 +48,14 @@
                 <label for="date">Date</label>
                 <input type="date" class="form-control" id="date" name="date">
             </div>
-            <div class="form-group">
-                <label for="image">Image</label>
-                <input type="file" class="form-control-file" id="image" name="image">
-            </div>
+           
             <div class="form-group">
                 <label for="description">Description</label>
                 <textarea class="form-control" id="description" name="description" rows="6" placeholder="Enter description"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="image">Image</label>
+                <input type="file" class="form-control-file" id="image" name="image">
             </div>
             <button type="submit" class="btn btn-primary">Publish</button>
         </form>
