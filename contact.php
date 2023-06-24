@@ -39,7 +39,7 @@
           <li class="nav-item"><a href="how-it-works.php" class="nav-link">How It Works</a></li>
           <li class="nav-item"><a href="team.php" class="nav-link">Our Team</a></li>
           <li class="nav-item"><a href="gallery.php" class="nav-link">Gallery</a></li>
-          <li class="nav-item"><a href="blog.php" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="blogs.php" class="nav-link">Blog</a></li>
           <li class="nav-item active"><a href="contact.php" class="nav-link">Contact</a></li>
         </ul>
       </div>
