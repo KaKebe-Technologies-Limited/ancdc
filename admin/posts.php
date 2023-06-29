@@ -5,8 +5,7 @@ ini_set('display_errors', 1);
 
 session_start();
 
-require_once 'db.php';
-
+require_once 'db.html';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $title = $_POST['title'];
     $date = $_POST['date'];
@@ -38,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             echo '<script>
                 setTimeout(function() {
                     alert("Post created successfully!");
-                    window.location.href = "index.php";
+                    window.location.href = "index.html";
                 }, 3000);
             </script>';
         } else {

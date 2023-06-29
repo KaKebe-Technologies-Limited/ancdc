@@ -5,7 +5,7 @@ ini_set('display_errors', 1);
 
 session_start();
 
-require_once 'db.php';
+require_once 'db.html';
 
 // Check if the form is submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($result->num_rows === 1) {
             // User login successful
             $_SESSION['username'] = $username;
-            header("Location: index.php"); // Redirect to the index page
+            header("Location: index.html"); // Redirect to the index page
             exit();
         } else {
             // Handle invalid credentials

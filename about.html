@@ -22,25 +22,78 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <style>
+      .panel {
+        display: none;
+        padding: 10px;
+      }
+      
+      .accordion {
+        background-color: #5DC3F4;
+        color: #333;
+        cursor: pointer;
+        padding: 10px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        position: relative;
+        padding-right: 25px;
+        transition: 0.4s;
+      }
+     
+      
+      .accordion-icon {
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .accordion:hover {
+        background-color: #5DC3F4;
+      }
+      
+      .accordion.active {
+        background-color: #ccc;
+      }
+      
+      .accordion::after {
+        content: '\002B';
+        color: #777;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      }
+      
+      .panel.show {
+        display: block;
+      }
+      
+      .panel p {
+        margin-top: 10px;
+      }
+      
+    </style>
+
   </head>
   <body>
     
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.php">ANCDC</a>
+      <a class="navbar-brand" href="index.html">ANCDC</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
-          <li class="nav-item active"><a href="about.php" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="how-it-works.php" class="nav-link">How It Works</a></li>
-          <li class="nav-item"><a href="team.php" class="nav-link">Our Team</a></li>
-          <li class="nav-item"><a href="gallery.php" class="nav-link">Gallery</a></li>
-          <li class="nav-item"><a href="blogs.php" class="nav-link">Blog</a></li>
-          <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item active"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+          <li class="nav-item"><a href="team.html" class="nav-link">Our Team</a></li>
+          <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="blogs.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -96,7 +149,7 @@
                   <div class="media-body">
                     <h3 class="heading">Our Mission</h3>
                     <p>All Nations Child Development Centre exists to holistically nurture children and youth in the community through advocating for their rights so that they can develop into self-sustainable and responsible fulfilled Christian adults.ll river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                    <p><a href="about.php" class="link-underline">Learn More</a></p>
+                    <p><a href="about.html" class="link-underline">Learn More</a></p>
                   </div>
                 </div>     
               </div>
@@ -107,7 +160,7 @@
                   <div class="media-body">
                     <h3 class="heading">Our Core Values</h3>
                     <p>The core values of All Nations Child Development Centre organization</p>
-                    <p><a href="about.php" class="link-underline">Learn More</a></p>
+                    <p><a href="about.html" class="link-underline">Learn More</a></p>
                   </div>
                 </div> 
               </div>
@@ -117,6 +170,71 @@
         </div> <!-- .site-section -->
 
         <hr>
+
+        <div class="site-section">
+          <div class="container">
+            <h4>Our Main Programs</h4>
+            <div class="row align-items-center mb-5">
+      
+              <div class="col-md-4 order-md-2 mb-5 mb-md-0">
+                <img src="images/yf.jpg" alt="" class="img-fluid">
+              </div>
+      
+              <div class="col-md-8 pr-md-5 mb-5 order-md-1">
+                <div class="block-41">
+                  <div class="block-41-subheading d-flex">
+                    <div class="block-41-number">One</div>
+                  </div>
+                  <h2 class="block-41-heading mb-3">Youth Fathers</h2>
+                  <div class="block-41-text">
+                    <p>The Youth Fathers Program empowers young fathers through education and mentorship, equipping them with skills for a brighter future and creating a supportive community for personal growth.</p>
+                    <button class="accordion">Read More ..</button>
+                    <div class="panel">
+                      <p>The Youth Fathers Program is a transformative initiative aimed at providing educational support and opportunities to young fathers, empowering them with the knowledge and skills needed for a brighter future. This program recognizes the unique challenges faced by young fathers and seeks to equip them with the resources necessary to navigate parenthood while pursuing personal growth and development. <br><br>
+
+                        Through the Youth Fathers Program, participants are given access to a range of educational and vocational training opportunities. These initiatives are designed to enhance their parenting skills, improve their employment prospects, and foster their overall personal development. By addressing the specific needs and aspirations of young fathers, the program helps them build a solid foundation for themselves and their children. <br> <br>
+                        
+                        Moreover, the Youth Fathers Program emphasizes the importance of mentorship and community support. It connects young fathers with experienced mentors who provide guidance, encouragement, and role modeling. The program also facilitates peer-to-peer interactions, creating a supportive network where young fathers can share their experiences, learn from one another, and form lasting connections.
+                        <br><br>
+                        Overall, the Youth Fathers Program serves as a catalyst for positive change, empowering young fathers to break the cycle of disadvantage and unlock their full potential. By investing in their education, skills, and personal growth, this program paves the way for a brighter future for both young fathers and their families.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- .row -->
+
+            <div class="row align-items-center mb-5">
+      
+              <div class="col-md-4 order-md-2 mb-5 mb-md-0">
+                <img src="images/img_2.jpg" alt="" class="img-fluid">
+              </div>
+      
+              <div class="col-md-8 pr-md-5 mb-5 order-md-1">
+                <div class="block-41">
+                  <div class="block-41-subheading d-flex">
+                    <div class="block-41-number">Two</div>
+                  </div>
+                  <h2 class="block-41-heading mb-3">Program Two</h2>
+                  <div class="block-41-text">
+                    <p>The Youth Fathers Program empowers young fathers through education and mentorship, equipping them with skills for a brighter future and creating a supportive community for personal growth.</p>
+                    <button class="accordion bg-primary">Read More ..</button>
+                    <div class="panel">
+                      <p>The Youth Fathers Program is a transformative initiative aimed at providing educational support and opportunities to young fathers, empowering them with the knowledge and skills needed for a brighter future. This program recognizes the unique challenges faced by young fathers and seeks to equip them with the resources necessary to navigate parenthood while pursuing personal growth and development. <br><br>
+
+                        Through the Youth Fathers Program, participants are given access to a range of educational and vocational training opportunities. These initiatives are designed to enhance their parenting skills, improve their employment prospects, and foster their overall personal development. By addressing the specific needs and aspirations of young fathers, the program helps them build a solid foundation for themselves and their children. <br> <br>
+                        
+                        Moreover, the Youth Fathers Program emphasizes the importance of mentorship and community support. It connects young fathers with experienced mentors who provide guidance, encouragement, and role modeling. The program also facilitates peer-to-peer interactions, creating a supportive network where young fathers can share their experiences, learn from one another, and form lasting connections.
+                        <br><br>
+                        Overall, the Youth Fathers Program serves as a catalyst for positive change, empowering young fathers to break the cycle of disadvantage and unlock their full potential. By investing in their education, skills, and personal growth, this program paves the way for a brighter future for both young fathers and their families.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- .row -->
+          </div>
+        </div>
+
+        <!-- end of our major programs -->
       <div class="row mt-5">
         <div class="row mb-3 justify-content-center">
         <div class="col-md-12 mb-5 text-center mt-5">
@@ -124,7 +242,7 @@
             <div class="col-md-8 text-center">
               <h2>Executive Board Members</h2>
             <p class="lead">Meet the leadership that is carrying forward with the amazing work done in Uganda</p>
-            <p class="mb-5"><a href="team.php" class="link-underline">View All Leadership</a></p>
+            <p class="mb-5"><a href="team.html" class="link-underline">View All Leadership</a></p>
             </div>
           </div>
         </div>
@@ -132,7 +250,7 @@
           <div class="block-38 text-center">
             <div class="block-38-img">
               <div class="block-38-header">
-                <img src="images/person_1.jpg" alt="Image placeholder">
+                <img src="images/team.png" alt="Image placeholder">
                 <h3 class="block-38-heading">Ajoli Jackson</h3>
                 <p class="block-38-subheading">Chairperson</p>
               </div>
@@ -146,7 +264,7 @@
           <div class="block-38 text-center">
             <div class="block-38-img">
               <div class="block-38-header">
-                <img src="images/person_1.jpg" alt="Image placeholder">
+                <img src="images/team.png" alt="Image placeholder">
                 <h3 class="block-38-heading">Awor Judith Patience</h3>
                 <p class="block-38-subheading">Education</p>
               </div>
@@ -159,7 +277,7 @@
         <div class="col-md-6 col-lg-3">
           <div class="block-38 text-center">
             <div class="block-38-header">
-              <img src="images/person_1.jpg" alt="Image placeholder">
+              <img src="images/team.png" alt="Image placeholder">
               <h3 class="block-38-heading">Poro Geoffrey</h3>
               <p class="block-38-subheading">Human Rights</p>
             </div>
@@ -171,7 +289,7 @@
         <div class="col-md-6 col-lg-3">
           <div class="block-38 text-center">
             <div class="block-38-header">
-              <img src="images/person_1.jpg" alt="Image placeholder">
+              <img src="images/team.png" alt="Image placeholder">
               <h3 class="block-38-heading">Emoru Lamech</h3>
               <p class="block-38-subheading">Health/Technical Advisor</p>
             </div>
@@ -184,7 +302,7 @@
         <div class="col-md-6 col-lg-3">
           <div class="block-38 text-center">
             <div class="block-38-header">
-              <img src="images/person_1.jpg" alt="Image placeholder">
+              <img src="images/team.png" alt="Image placeholder">
               <h3 class="block-38-heading">Odongo Yeko</h3>
               <p class="block-38-subheading">Integrated Development</p>
             </div>
@@ -197,7 +315,7 @@
         <div class="col-md-6 col-lg-3">
           <div class="block-38 text-center">
             <div class="block-38-header">
-              <img src="images/person_1.jpg" alt="Image placeholder">
+              <img src="images/team.png" alt="Image placeholder">
               <h3 class="block-38-heading">Awor Rosemary</h3>
               <p class="block-38-subheading">Environment</p>
             </div>
@@ -210,7 +328,7 @@
         <div class="col-md-6 col-lg-3">
           <div class="block-38 text-center">
             <div class="block-38-header">
-              <img src="images/person_1.jpg" alt="Image placeholder">
+              <img src="images/team.png" alt="Image placeholder">
               <h3 class="block-38-heading">Adoko Janet</h3>
               <p class="block-38-subheading">Treasure</p>
             </div>
@@ -223,7 +341,7 @@
         <div class="col-md-6 col-lg-3">
           <div class="block-38 text-center">
             <div class="block-38-header">
-              <img src="images/person_1.jpg" alt="Image placeholder">
+              <img src="images/team.png" alt="Image placeholder">
               <h3 class="block-38-heading">Edwe Dorcus Rita</h3>
               <p class="block-38-subheading">Secretary</p>
             </div>
@@ -259,7 +377,7 @@
             <div class="media-body">
               <h3 class="heading">Our Mission</h3>
               <p>All Nations Child Development Centre exists to holistically nurture children and youth in the community through advocating for their rights so that they can develop into self-sustainable and responsible fulfilled Christian adults.ll river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              <p><a href="about.php" class="link-underline">Learn More</a></p>
+              <p><a href="about.html" class="link-underline">Learn More</a></p>
             </div>
           </div>     
         </div>
@@ -270,7 +388,7 @@
             <div class="media-body">
               <h3 class="heading">Our Core Values</h3>
               <p>The core values of All Nations Child Development Centre organization</p>
-              <p><a href="about.php" class="link-underline">Learn More</a></p>
+              <p><a href="about.html" class="link-underline">Learn More</a></p>
             </div>
           </div> 
         </div>
@@ -285,7 +403,7 @@
         <div class="col-md-6 col-lg-4">
           <h3 class="heading-section">About Us</h3>
           <p class="mb-5 text-left"> Christian NGO empowering vulnerable children and households through education, health interventions, child protection, and empowerment programs for a brighter future.</p>
-          <p><a href="about.php" class="link-underline">Read  More</a></p>
+          <p><a href="about.html" class="link-underline">Read  More</a></p>
         </div>
         <div class="col-md-6 col-lg-4">
           <h3 class="heading-section">Recent Blog</h3>
@@ -367,6 +485,34 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var acc = document.getElementsByClassName('accordion');
+      var panel = document.getElementsByClassName('panel');
+    
+      for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener('click', function() {
+          var currentPanel = this.nextElementSibling;
+          if (currentPanel.style.display === 'block') {
+            currentPanel.style.display = 'none';
+            this.classList.remove('active');
+            this.innerHTML = 'Read More <span class="accordion-icon">&#43;</span>';
+          } else {
+            for (var j = 0; j < panel.length; j++) {
+              panel[j].style.display = 'none';
+              acc[j].classList.remove('active');
+              acc[j].innerHTML = 'Read More <span class="accordion-icon">&#43;</span>';
+            }
+            currentPanel.style.display = 'block';
+            this.classList.add('active');
+            this.innerHTML = 'Read Less <span class="accordion-icon">&#45;</span>';
+          }
+        });
+      }
+    });
+    
+  </script>
     
   </body>
 </html>

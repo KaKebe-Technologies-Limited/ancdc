@@ -27,7 +27,7 @@
                     <a class="nav-link" href="#">Users</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="sign_in.php">Logout</a>
+                    <a class="nav-link" href="sign_in.html">Logout</a>
                 </li>
             </ul>
         </div>
@@ -39,7 +39,7 @@
         <div class="row">
             <div class="col-md-6">
             
-        <form method="POST" action="posts.php" enctype="multipart/form-data">
+        <form method="POST" action="posts.html" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="title">Title</label>
                 <input type="text" class="form-control" id="title" name="title" placeholder="Enter title">

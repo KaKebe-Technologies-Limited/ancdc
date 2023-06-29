@@ -13,7 +13,7 @@
         <div class="row justify-content-center">
             <div class="col-md-6 mt-5">
                 <h2 class="text-center mb-4">User Signup</h2>
-                <form method="POST" action="signup.php">
+                <form method="POST" action="signup.html">
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
@@ -40,7 +40,7 @@
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Sign up</button>
                 </form>
-                <p class="text-center mt-3">Already have an account? <a href="sign_in.php">Log in</a></p>
+                <p class="text-center mt-3">Already have an account? <a href="sign_in.html">Log in</a></p>
             </div>
         </div>
     </div>

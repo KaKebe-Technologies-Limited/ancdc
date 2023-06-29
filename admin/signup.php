@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-require_once 'db.php';
+require_once 'db.html';
 
 session_start();
 
@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($conn->query($sql) === TRUE) {
             // User registration successful
             $_SESSION['username'] = $username;
-            header("Location: index.php"); // Redirect to the dashboard page
+            header("Location: index.html"); // Redirect to the dashboard page
             exit();
         } else {
             // Handle database error
